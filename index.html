@@ -1,11 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reisebyrå</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header class="top-banner">
+        <img src="img/fav.png" alt="Logo" class="logo">
+        <nav class="user-section">
+            <div class="user-options">
+                <a href="#" class="search-icon"><img src="img/search.png" alt="Søk"></a>
+                <a href="#" class="create-account">Opprett en konto</a>
+                <a href="#" class="my-page">Min side</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Tips og inspirasjon</a></li>
+                <li><a href="#">Hotell</a></li>
+                <li><a href="#">Fly</a></li>
+                <li><a href="#">Kontakt</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blue Banner with Search Section -->
+    <section class="blue-banner">
+        <section class="search-container">
+            <ul class="search-nav">
+                <li><a href="#"><img src="img/fly+hotell.png" alt="Fly + Hotell"> Fly + Hotell</a></li>
+                <li><a href="#"><img src="img/fly.png" alt="Fly"> Fly</a></li>
+                <li><a href="#"><img src="img/storby.png" alt="Storby"> Storby</a></li>
+                <li><a href="#"><img src="img/ski.png" alt="Ski"> Ski</a></li>
+                <li><a href="#"><img src="img/kombinasjonreiser.png" alt="Kombinasjonsreiser"> Kombinasjonsreiser</a></li>
+            </ul>
+            <form class="search-form">
+                <select>
+                    <option>Fra</option>
+                    <option>Oslo Lufthavn</option>
+                </select>
+                <select>
+                    <option>Til</option>
+                    <option>Albania</option>
+                </select>
+                <select>
+                    <option>Reiselengde</option>
+                    <option>7 Dager</option>
+                    <option>14 Dager</option>
+                    <option>21 Dager</option>
+                </select>
+                <input type="date">
+                <select>
+                    <option>Antall reisende</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                </select>
+                <button type="submit">Søk</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <img src="img/holiday-2733322_1280.jpg" alt="Banner">
+        <section class="banner-text">
+            <h1>Bestill sommerens beste uke</h1>
+            <p>Fly + hotell, 7 dager</p>
+            <span>Fra 3 298,-</span>
+            <a href="#" class="btn">Bestill i dag</a>
+        </section>
+    </section>
+
+    <!-- Exclusive Offers Section -->
+    <section class="offers">
+        <article>
+            <h3>Få eksklusive tilbud</h3>
+            <p>Logg inn/opprett konto og få rabattkoder</p>
+        </article>
+        <article>
+            <h3>Billige restplasser</h3>
+            <p>Opptil 50% rabatt</p> 
+        </article>
+        <article>
+            <h3>Mars - spar opptil 5000,-</h3>
+            <p>Sikre deg et feriekupp</p>
+        </article>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips">
+        <h2>Tips & Inspirasjon</h2>
+        <section class="tips-grid">
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="Greske favoritter">
+                <h3>Greske favoritter</h3>
+                <p>Fra kr 3 970,-</p>
+            </article>
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="Solskinnspriser">
+                <h3>Solskinnspriser</h3>
+                <p>Fra kr 2 203,-</p>
+            </article>
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="Storbyferie">
+                <h3>Storbyferie</h3>
+                <p>Fra kr 2 150,-</p>
+            </article>
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="London">
+                <h3>Besøk påskefavoritten London</h3>
+                <p>Fra kr 2 150,-</p>
+            </article>
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="Skiferie">
+                <h3>Skiferie</h3>
+                <p>Fra kr 2 700,-</p>
+            </article>
+            <article>
+                <img src="img/beach-666122_640.jpg" alt="Sørlige strender">
+                <h3>Spar opptil 7000,- til sommer</h3>
+                <p>Fra kr 3 500,-</p>
+            </article>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul class="footer-flags">
+            <li><img src="flags/sweden.png" alt="Sverige"> Sverige</li>
+            <li><img src="flags/denmark.png" alt="Danmark"> Danmark</li>
+            <li><img src="flags/norway.png" alt="Norge"> Norge</li>
+            <li><img src="flags/material.png" alt="Suomi"> Suomi</li>
+            <li><img src="flags/netherlands.png" alt="Nederland"> Nederland</li>
+        </ul>
+        <section class="footer-content">
+            <section>
+                <h4>Betalingsmetoder</h4>
+                <ul class="payment-methods">
+                    <li><img src="img/visa.png" alt="Visa"></li>
+                    <li><img src="img/mastercard.png" alt="Mastercard"></li>
+                    <li><img src="img/paypal.png" alt="PayPal"></li>
+                    <li><img src="img/apple.png" alt="Apple Pay"></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Nyheter & Tilbud</h4>
+                <form class="custom-form">
+                    <fieldset>
+                        <legend>Meld deg på nyhetsbrev her</legend>
+                        <input type="email" placeholder="ola@example.com">
+                        <button type="submit">Send</button>
+                    </fieldset>
+                    <p>Kjøp reisegavekort</p>
+                </form>
+            </section>
+            <section>
+                <h4>Kundeservice</h4>
+                <ul>
+                    <li><a href="#">Spørsmål og Svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Sosiale Medier</h4>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/pinterest.png" alt="Pinterest"></a></li>
+                    <li><a href="#"><img src="img/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="img/youtube.png" alt="YouTube"></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
 </body>
 </html>

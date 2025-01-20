@@ -1,0 +1,571 @@
+
+:root {
+    --primary-color: #027792;
+    --secondary-color: #252525;
+    --background-color: #f6f5f2;
+    --accent-color: #ffd700;
+    --blue-banner-color: #027792;
+    --blue-banner-text-color: #ffffff;
+}
+
+/* General Body Styles */
+body, h1, h2, h3, p, ul, li, a, img, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Header Section */
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 40px;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    gap: 15px;
+}
+
+.user-options a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 14px;
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-options a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Blue Banner Section */
+.blue-banner {
+    background-color: var(--blue-banner-color);
+    color: var(--blue-banner-text-color);
+    padding: 100px;
+    text-align: center;
+    position: relative;
+}
+
+/* Search Container Styling */
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 100%; /* This adjusts the positioning to make it overlap */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.search-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.search-nav img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Search Form Styling */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.search-form select,
+.search-form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 16%;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #e6c200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form select,
+    .search-form input[type="date"] {
+        width: 50%;
+    }
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.banner img {
+    max-width: 60%;
+    height: auto;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.banner-text .btn:hover {
+    background-color: #e5c200;
+}
+
+/* Offers Section */
+.offers {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.offers article {
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+}
+
+.offers h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.offers p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Tips Section */
+.tips {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tips h2 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tips-grid article {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tips-grid img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.footer-flags {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.footer-flags img {
+    width: 30px;
+    height: 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: start;
+    text-align: left;
+}
+
+footer h4 {
+    font-size: 20px;
+    color: #f8fdfd;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-methods img {
+    width: 30px;
+    height: auto;
+}
+
+.newsletter-form button:hover {
+    background-color: #e5c200;
+}
+
+.newsletter-form + p {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.progress-bar {
+    background-color: #00a6d6; /* Background color for the progress bar */
+    padding: 5px 0;
+    height: 70px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.progress-bar ul {
+    display: flex; /* Arrange list items horizontally */
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+}
+
+.progress-bar li {
+    position: relative; /* Required for positioning the arrow */
+    margin: 0 10px; /* Space between items */
+    padding: 10px 20px; /* Padding inside each item */
+    color: white; /* Text color */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.progress-bar li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+}
+
+.progress-bar li.current-step {
+    background-color: #ff9900; /* Highlight color for the current step */
+}
+
+.progress-bar li:after {
+    content: "›"; /* Add the arrow */
+    position: relative;
+    right: -5px; /* Position the arrow */
+    color: white; /* Arrow color */
+    font-size: 30px; /* Arrow size */
+}
+
+.progress-bar li:last-child:after {
+    content: ""; /* Remove the arrow from the last item */
+}
+
+
+
+  
+
+
+
+
+
+
+
+/* General reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(249, 249, 249, 0.1);
+}
+
+/* Left Section */
+form {
+    flex: 2;
+    margin-right: 20px;
+}
+
+
+
+form legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
+
+
+form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input,
+form select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e0a800;
+}
+
+/* Right Section */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+aside h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+aside p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+aside p strong {
+    font-size: 16px;
+    color: #000;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Progress Bar */
+.progress-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+}
+
+.progress-bar ul li {
+    font-size: 14px;
+    color: #555;
+}
+
+.progress-bar ul li a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.progress-bar ul li.current-step {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.progress-bar ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+

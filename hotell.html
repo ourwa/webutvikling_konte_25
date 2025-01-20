@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reisebyrå - Hotell</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <!-- Header Section -->
+      <header class="top-banner">
+        <div class="logo-container">
+            <img src="img/fav.png" alt="Logo" class="logo">
+        </div>
+        <div class="user-section">
+            <div class="user-options">
+                <a href="#" class="create-account">Opprett en konto</a>
+                <a href="#" class="my-page">Min side</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Tips og inspirasjon</a>
+                <a href="#">Hotell</a>
+                <a href="#">Fly</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </div>
+    </header>
     
+
+   <!-- Main content area -->
+   <main>
+    <!-- Image gallery section -->
+    <section class="header-grid">
+        <div class="image-gallery">
+            <img src="images/hotel1.jpg" alt="Hotel Image 1">
+            <img src="images/hotel2.jpg" alt="Hotel Image 2">
+            <img src="images/hotel3.jpg" alt="Hotel Image 3">
+            <img src="images/hotel4.jpg" alt="Hotel Image 4">
+            <img src="images/hotel5.jpg" alt="Hotel Image 5">
+            <img src="images/hotel6.jpg" alt="Hotel Image 6">
+        </div>
+    </section>
+
+    <!-- Navigation section for content -->
+    <nav class="content-navigation">
+        <ul>
+            <li><a href="#overview">Oversikt</a></li>
+            <li><a href="#facilities">Fasiliteter</a></li>
+            <li><a href="#map">Kart</a></li>
+            <li><a href="#rooms">Tilgjengelige rom</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hotel overview section -->
+    <section id="overview">
+        <h2>Hotel Name</h2>
+        <p>⭐️⭐️⭐️⭐️ 4.5 / 5</p>
+    </section>
+
+    <!-- Facilities section -->
+    <section id="facilities">
+        <h3>Fasiliteter</h3>
+        <ul>
+            <li>Gratis Wi-Fi</li>
+            <li>Svømmebasseng</li>
+            <li>Frokost inkludert</li>
+            <li>Spa og velvære</li>
+        </ul>
+    </section>
+
+    <!-- Map section -->
+    <section id="map">
+        <h3>Kart</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093744!2d144.95373631550483!3d-37.81627974201368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727f0a575e60a7!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1633314831786!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Available rooms section -->
+    <section id="rooms" class="rooms-section">
+        <h3>Tilgjengelige rom</h3>
+        <article class="room-card">
+            <img src="images/room1.jpg" alt="Room Image">
+            <h4>Junior Suite</h4>
+            <ul>
+                <li>Plass til 2</li>
+                <li>Queen size-seng</li>
+            </ul>
+            <p>Score: 4.7 / 5 (59 anmeldelser)</p>
+            <ul>
+                <li>6 789 kr for 3 netter, 1 rom</li>
+                <li>2 263 kr per natt</li>
+                <li>Inkl. moms og avgifter</li>
+            </ul>
+        </article>
+    </section>
+</main>
+     <!-- Footer Section -->
+    <footer>
+        <ul class="footer-flags">
+            <li>
+                <img src="flags/sweden.png" alt="Sverige"> Sverige
+            </li>
+            <li>
+                <img src="flags/denmark.png" alt="Danmark"> Danmark
+            </li>
+            <li>
+                <img src="flags/norway.png" alt="Norge"> Norge
+            </li>
+            <li>
+                <img src="flags/material.png" alt="Suomi"> Suomi
+            </li>
+            <li>
+                <img src="flags/netherlands.png" alt="Nederland"> Nederland
+            </li>
+        </ul>
+        
+        <div class="footer-content">
+            <section>
+                <h4>Betalingsmetoder</h4>
+                <ul class="payment-methods">
+                    <li><img src="img/visa.png" alt="Visa"></li>
+                    <li><img src="img/mastercard.png" alt="Mastercard"></li>
+                    <li><img src="img/paypal.png" alt="PayPal"></li>
+                    <li><img src="img/apple.png" alt="Apple Pay"></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Nyheter & Tilbud</h4>
+                <form class="custom-form">
+                    <fieldset>
+                        <legend>Meld deg på nyhetsbrev her</legend>
+                        <input type="email" placeholder="ola@example.com">
+                        <button type="submit">Send</button>
+                    </fieldset>
+                    <p>Kjøp reisegavekort</p>
+                </form>
+            </section>
+            <section>
+                <h4>Kundeservice</h4>
+                <ul>
+                    <li><a href="#">Spørsmål og Svar</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Sosiale Medier</h4>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/pinterest.png" alt="Pinterest"></a></li>
+                    <li><a href="#"><img src="img/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="img/youtube.png" alt="YouTube"></a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
