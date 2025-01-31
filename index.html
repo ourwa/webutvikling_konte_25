@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reisebyrå</title>
+    <title>Forsiden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header class="top-banner">
-        <img src="img/fav.png" alt="Logo" class="logo">
+        <a href="index.html"><img src="img/fav.png" alt="Logo" class="logo"></a>
         <nav class="user-section">
-            <div class="user-options">
-                <a href="#" class="search-icon"><img src="img/search.png" alt="Søk"></a>
+            <article class="user-options">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
                 <a href="#" class="create-account">Opprett en konto</a>
-                <a href="#" class="my-page">Min side</a>
-            </div>
+                <a href="order.html" class="my-page">Min side</a>
+            </article>
             <ul class="nav-links">
-                <li><a href="#">Tips og inspirasjon</a></li>
-                <li><a href="#">Hotell</a></li>
-                <li><a href="#">Fly</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#tips-og-inspirasjon">Tips og inspirasjon</a></li>
+                <li><a href="hotell.html">Hotell</a></li>
+                <li><a href="https://www.norwegian.no" target="_blank"></i> Fly</a></li>
+                <li><a href="order.html">Kontakt</a></li>
                
             </ul>
         </nav>
@@ -30,37 +31,62 @@
     <section class="blue-banner">
         <section class="search-container">
             <ul class="search-nav">
-                <li><a href="#"><img src="img/fly+hotell.png" alt="Fly + Hotell"> Fly + Hotell</a></li>
-                <li><a href="#"><img src="img/fly.png" alt="Fly"> Fly</a></li>
-                <li><a href="#"><img src="img/storby.png" alt="Storby"> Storby</a></li>
-                <li><a href="#"><img src="img/ski.png" alt="Ski"> Ski</a></li>
-                <li><a href="#"><img src="img/kombinasjonreiser.png" alt="Kombinasjonsreiser"> Kombinasjonsreiser</a></li>
+                <li><a href="#"><i class="fas fa-suitcase-rolling"></i> Fly + Hotell</a></li>
+                <li><a href="https://www.norwegian.no"><i class="fas fa-plane"></i> Fly</a></li>
+                <li><a href="#"><i class="fas fa-city"></i> Storby</a></li>
+                <li><a href="#"><i class="fas fa-skiing"></i> Ski</a></li>
+                <li><a href="#"><i class="fas fa-globe"></i> Kombinasjonsreiser</a></li>
             </ul>
+            
+
             <form class="search-form">
-                <select>
-                    <option>Fra</option>
-                    <option>Oslo Lufthavn</option>
-                </select>
-                <select>
-                    <option>Til</option>
-                    <option>Albania</option>
-                </select>
-                <select>
-                    <option>Reiselengde</option>
-                    <option>7 Dager</option>
-                    <option>14 Dager</option>
-                    <option>21 Dager</option>
-                </select>
-                <input type="date">
-                <select>
-                    <option>Antall reisende</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4+</option>
-                </select>
+                <fieldset>
+                    <legend>Fra</legend>
+                    <select required>
+                        <option value="oslo">Oslo Lufthavn</option>
+                        <option value="torp">Torp Sandefjord Lufthavn</option>
+                        <option value="bergen">Bergen Lufthavn</option>
+                        <option value="alta">Alta Lufthavn</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Til</legend>
+                    <select required>
+                        <option value="">Albania</option>
+                        <option value="">Danmark</option>
+                        <option value="">Finland</option>
+                        <option value="bergen">Hellas</option>
+                       
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Reiselengde</legend>
+                    <select required>
+                        <option value="">Mindre enn 1 uke</option>
+                        <option value="7 Dager">1 uke</option>
+                        <option value="14 Dager">2 uker</option>
+                        <option value="14 Dager">mer enn 2 uker</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Velg dato</legend>
+                    <input type="date" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Antall reisende</legend>
+                    <select required>
+                        <option value="2">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                        <option value="2">5</option>
+                        <option value="2">6</option>
+                    </select>
+                </fieldset>
                 <button type="submit">Søk</button>
             </form>
+            
         </section>
     </section>
 
@@ -71,7 +97,7 @@
             <h1>Bestill sommerens beste uke</h1>
             <p>Fly + hotell, 7 dager</p>
             <span>Fra 3 298,-</span>
-            <a href="#" class="btn">Bestill i dag</a>
+            <a href="order.html" class="btn">Bestill i dag</a>
         </section>
     </section>
 
@@ -79,52 +105,95 @@
     <section class="offers">
         <article>
             <h3>Få eksklusive tilbud</h3>
-            <p>Logg inn/opprett konto og få rabattkoder</p>
+            <a href="#" class="review-link">Logg inn/opprett konto og få rabattkoder<span class="arrow">&raquo;</span></a>
         </article>
         <article>
             <h3>Billige restplasser</h3>
-            <p>Opptil 50% rabatt</p> 
+            <a href="#" class="review-link">Opptil 50% rabatt<span class="">&raquo;</span></a>
+           
         </article>
         <article>
             <h3>Mars - spar opptil 5000,-</h3>
-            <p>Sikre deg et feriekupp</p>
+            <a href="#" class="review-link">Sikre deg et feriekupp<span class="">&raquo;</span></a>
         </article>
+        <!-- Add more articles as needed -->
     </section>
+    
 
     <!-- Tips Section -->
-    <section class="tips">
-        <h2>Tips & Inspirasjon</h2>
+    <section class="tips"id="tips-og-inspirasjon">
+        <h2>Tips og Inspirasjon</h2>
         <section class="tips-grid">
             <article>
-                <img src="img/beach-666122_640.jpg" alt="Greske favoritter">
+                <img src="img/beach-6514331_640.jpg" alt="Greske favoritter">
                 <h3>Greske favoritter</h3>
-                <p>Fra kr 3 970,-</p>
+                <br>
+                <p>Akkurat nå får du 1 000,- i rabatt per bestilling til bl.a. Parga, Sivota,
+                    Lefkas, Korfu og Kalamata i Hellas.
+                    Gjelder avreiser i sommer 2025.
+                    Kampanjen er gyldig i perioden 3/1
+                    - 12/1-2025. Bruk rabattkoden
+                    WEEKDEAL ved bestilling.</p>
+                <br>
+                <p class="price">
+                    <a href="order.html">Fra <strong>kr 3 970</strong><span class="arrow">&rarr;</span></a>
+                </p>
             </article>
             <article>
-                <img src="img/beach-666122_640.jpg" alt="Solskinnspriser">
+                <img src="img/beach-1836467_640.jpg" alt="Solskinnspriser">
                 <h3>Solskinnspriser</h3>
-                <p>Fra kr 2 203,-</p>
+                <br>
+                <p>Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste
+                    uke i dag!</p>
+                <br>
+                <p class="price">
+                    <a href="order.html">Fra <strong>kr 2 203</strong><span class="arrow">&rarr;</span></a>
+                </p>
             </article>
             <article>
-                <img src="img/beach-666122_640.jpg" alt="Storbyferie">
+                <img src="img/cathedral-427997_640.jpg" alt="Storbyferie">
                 <h3>Storbyferie</h3>
-                <p>Fra kr 2 150,-</p>
+                <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og
+                    nøye utvalgte hotell.</p>
+                <br>
+                <p class="price">
+                    <a href="order.html">Fra <strong>Les mer</strong><span class="arrow">&rarr;</span></a>
+                </p>
             </article>
             <article>
-                <img src="img/beach-666122_640.jpg" alt="London">
+                <img src="img/building-7014904_640.jpg" alt="London">
                 <h3>Besøk påskefavoritten London</h3>
-                <p>Fra kr 2 150,-</p>
+                <br>
+                <p>London er en av de mest populære reisemålene i Danmark. Den er kjent for sin unike blanding av historie, kultur og moderne opplevelser.</p>
+                <br>
+                <p class="price">
+                    <a href="order.html">Fra <strong>kr 2 150</strong><span class="arrow">&rarr;</span></a>
+                </p>
             </article>
             <article>
-                <img src="img/beach-666122_640.jpg" alt="Skiferie">
+                <img src="img/ski-slope-3223709_640.jpg" alt="Skiferie">
                 <h3>Skiferie</h3>
-                <p>Fra kr 2 700,-</p>
+                <br>
+                <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her, og det
+                    betyr at skisesongen er i full gang!</p>
+                <br>
+                <p class="price">
+                    <a href="order.html"><strong>Se alle skistedene</strong><span class="arrow">&rarr;</span></a>
+                </p>
             </article>
             <article>
                 <img src="img/beach-666122_640.jpg" alt="Sørlige strender">
                 <h3>Spar opptil 7000,- til sommer</h3>
-                <p>Fra kr 3 500,-</p>
+                <br>
+                <p>Drømmer du om solfylte dager og eksotiske opplevelser? Nå har du
+                    sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
+                <br>
+                <p class="price">
+                    <a href="order.html"><strong>Les mer</strong><span class="arrow">&rarr;</span></a>
+                </p>
             </article>
+            
+            
         </section>
     </section>
 
@@ -141,11 +210,14 @@
             <section>
                 <h4>Betalingsmetoder</h4>
                 <ul class="payment-methods">
-                    <li><img src="img/visa.png" alt="Visa"></li>
-                    <li><img src="img/mastercard.png" alt="Mastercard"></li>
-                    <li><img src="img/paypal.png" alt="PayPal"></li>
-                    <li><img src="img/apple.png" alt="Apple Pay"></li>
+                    <li><a href="https://www.visa.com" target="_blank" aria-label="Visa payment method"><i class="fab fa-cc-visa"></i></a></li>
+                    <li><a href="https://www.mastercard.com" target="_blank" aria-label="Mastercard payment method"><i class="fab fa-cc-mastercard"></i></a></li>
+                    <li><a href="https://www.paypal.com" target="_blank" aria-label="PayPal payment method"><i class="fab fa-cc-paypal"></i></a></li>
+                    <li><a href="https://www.apple.com/apple-pay/" target="_blank" aria-label="Apple Pay payment method"><i class="fab fa-apple-pay"></i></a></li>
+                    <li><a href="https://www.amazon.com/amazonpay" target="_blank" aria-label="Amazon Pay payment method"><i class="fab fa-amazon-pay"></i></a></li>
                 </ul>
+                
+                
             </section>
             <section>
                 <h4>Nyheter & Tilbud</h4>
@@ -164,17 +236,17 @@
                     <li><a href="#">Spørsmål og Svar</a></li>
                     <li><a href="#">Chat</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Tilgjengelighetserklæring</a></li>
+                    <li><a href="tilgjengelighetserklæring.pdf" target="_blank">Tilgjengelighetserklæring</a></li>
                 </ul>
             </section>
             <section>
                 <h4>Sosiale Medier</h4>
                 <ul class="social-icons">
-                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="img/pinterest.png" alt="Pinterest"></a></li>
-                    <li><a href="#"><img src="img/tiktok.png" alt="TikTok"></a></li>
-                    <li><a href="#"><img src="img/youtube.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </section>
         </section>
