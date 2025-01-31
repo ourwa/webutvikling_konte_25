@@ -198,10 +198,6 @@ body {
     margin-right: 0; 
 }
 
-
-
-
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .search-nav {
@@ -222,9 +218,6 @@ body {
     gap: 5px; /* Smaller gap between fields */
     flex-wrap: wrap;
 }
-
-
-
 
 .search-form fieldset {
     border: 1px solid #ccc;
@@ -426,8 +419,6 @@ body {
         margin-bottom: 20px; /* Add margin between rows */
     }
 }
-
-
 
 /* Tips Section */
 
@@ -632,18 +623,6 @@ form button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* order page */
 main {
     display: grid;
@@ -750,9 +729,6 @@ aside p strong {
     color: #000;
 }
 
-
-
-
 /* Progress Bar Styles */
 
 .progress-bar {
@@ -827,18 +803,6 @@ aside p strong {
 
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1278,12 +1242,6 @@ section {
         grid-template-columns: repeat(2, 1fr); /* Keep two cards per row */
     }
 }
-
-
-
-
-
-
 
 @media (max-width: 480px) {
     .container {
